@@ -1,23 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Aside from './Aside';
+import AboutMe from './AboutMe';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div id='container' className='container bg-white rounded-lg drop-shadow overflow-hidden flex'>
+        <Aside className='w-1/5'/>
+        <AboutMe />
+      </div>
     </div>
   );
 }

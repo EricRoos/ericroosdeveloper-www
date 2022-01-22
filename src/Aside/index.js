@@ -1,3 +1,13 @@
+import {
+  IoPersonCircle,
+  IoCodeSlash,
+  IoDocumentTextSharp,
+} from 'react-icons/io5'
+
+import {
+  BsJournalRichtext
+} from 'react-icons/bs';
+
 function Aside({className}) {
   return (
     <aside id='aside' className={`bg-primary ${className} p-2 text-white`}>
@@ -17,10 +27,10 @@ function Aside({className}) {
         </div>
         <div className='py-6' >
           <div id='links' className='flex flex-col gap-2 text-lg w-3/5 m-auto'>
-            <div>About Me</div>
-            <div>Portfolio</div>
-            <div>Resume</div>
-            <div>Blog</div>
+            <div className='flex items-center gap-2'><IoPersonCircle/> About Me</div>
+            <div className='flex items-center gap-2'><IoCodeSlash /> Portfolio</div>
+            <div className='flex items-center gap-2'><IoDocumentTextSharp /> Resume</div>
+            <div className='flex items-center gap-2'><BsJournalRichtext /> Blog</div>
           </div>
         </div>
         <div className='py-6'>

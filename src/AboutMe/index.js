@@ -38,7 +38,7 @@ function AboutMe(){
             <h1 className='text-4xl font-bold py'>
               <Translate path='heading.name'/>
             </h1>
-            <h2 className='text-xl py'>
+            <h2 className='text-xl py text-accent'>
               <Translate path='heading.title'/>
             </h2>
           </div>

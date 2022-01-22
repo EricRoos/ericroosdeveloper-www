@@ -1,4 +1,4 @@
 body {
   @apply bg-gray;
-  @apply pt-6;
+  @apply md:pt-6;
 }

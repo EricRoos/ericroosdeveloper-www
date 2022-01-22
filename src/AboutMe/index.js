@@ -32,8 +32,8 @@ function AboutMe(){
 
   return (
     <div className='w-full'>
-      <div className='flex justify-between bg-light-gray p-8 pl-12'>
-        <div className='w-1/2'>
+      <div className='flex flex-wrap justify-between bg-light-gray p-8 pl-12'>
+        <div className='w-full lg:w-1/2'>
           <div className='mb-4'>
             <h1 className='text-4xl font-bold py'>
               <Translate path='heading.name'/>
@@ -46,7 +46,7 @@ function AboutMe(){
             <Translate path='heading.summary' />
           </p>
         </div>
-        <div className='w-1/2 p-4 overflow-hidden justify-end flex'>
+        <div className='w-full lg:w-1/2 p-4 overflow-hidden justify-end flex'>
           <img src='https://place-hold.it/400x300' className=''/>
         </div>
       </div>
@@ -61,7 +61,7 @@ function AboutMe(){
         </div>
         <div className='flex mt-4 flex-wrap'>
           { SHOWN_LANGUAGES.map( language => (
-            <div className='md:w-1/2 lg:w-1/4 p-2'>
+            <div className='w-full md:w-1/2 lg:w-1/4 p-2'>
               <div className='flex h-6 gap-2'>
                 { (icons[language] || []).map( i => <img key={i} src={i} /> ) }
               </div>

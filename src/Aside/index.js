@@ -4,6 +4,8 @@ import {
   IoDocumentTextSharp,
 } from 'react-icons/io5'
 
+import { Link } from 'react-router-dom';
+
 import {
   BsJournalRichtext
 } from 'react-icons/bs';
@@ -27,10 +29,26 @@ function Aside({className}) {
         </div>
         <div className='py-6' >
           <div id='links' className='flex flex-col gap-2 text-lg w-3/5 m-auto'>
-            <div className='flex items-center gap-2'><IoPersonCircle/> About Me</div>
-            <div className='flex items-center gap-2'><IoCodeSlash /> Portfolio</div>
-            <div className='flex items-center gap-2'><IoDocumentTextSharp /> Resume</div>
-            <div className='flex items-center gap-2'><BsJournalRichtext /> Blog</div>
+            <Link to='/'>
+              <div className='flex items-center gap-2 hover:text-black'>
+                <IoPersonCircle/> About Me
+              </div>
+            </Link>
+            <Link to='/portfolio'>
+              <div className='flex items-center gap-2 hover:text-black'>
+                <IoCodeSlash /> Portfolio
+              </div>
+            </Link>
+            <Link to='/resume'>
+              <div className='flex items-center gap-2 hover:text-black'>
+                <IoDocumentTextSharp /> Resume
+              </div>
+            </Link>
+            <Link to='/blog'>
+              <div className='flex items-center gap-2 hover:text-black'>
+                <BsJournalRichtext /> Blog
+              </div>
+            </Link>
           </div>
         </div>
         <div className='py-6'>

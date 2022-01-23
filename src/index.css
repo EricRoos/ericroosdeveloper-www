@@ -9,3 +9,12 @@ html {
 p {
   @apply text-justify;
 }
+
+#blog h1{
+  @apply text-3xl;
+  @apply text-primary;
+}
+#blog h2{
+  @apply text-xl;
+  @apply text-accent;
+}

@@ -1,6 +1,6 @@
 import RailsIcon from './icons/rails.svg?url';
 
-export default {
+const content = {
   en: {
     heading: {
       name: "Eric Roos",
@@ -39,4 +39,6 @@ export default {
       }
     }
   }
-}
+};
+
+export default content;

@@ -14,7 +14,7 @@ const content = {
     languages: {
       javascript: {
         name: "JavaScript & React",
-        description: "Lorem Ipsum",
+        description: "I am confident in building full SPAs or Component Libraries with React.",
         icons: [],
       },
       ror: {

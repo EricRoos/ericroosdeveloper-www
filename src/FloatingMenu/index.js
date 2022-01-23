@@ -26,7 +26,7 @@ function FloatingMenu(){
   return (
     <Popover
       isOpen={isOpen}
-      content={<div className='md:hidden w-[80vw] m-auto px-4'><Aside className='rounded-xl rounded-br-none'/></div>}
+      content={<div className='animate__animated animate__faster animate__slideInUp md:hidden w-[80vw] m-auto px-4'><Aside className='rounded-xl rounded-br-none'/></div>}
     >
       <button onClick={toggle} className={`md:hidden flex fixed bottom-4 right-4 rounded p-3 bg-primary z-1 justify-center items-center text-white text-3xl ${ isOpen ? 'bg-gray rounded-t-none' : '' }`}>
         { !isOpen && <BsMenuUp /> }

@@ -13,8 +13,16 @@ p {
 #blog h1{
   @apply text-3xl;
   @apply text-primary;
+  @apply my-2;
 }
+
 #blog h2{
   @apply text-xl;
   @apply text-accent;
+  @apply my-2;
+}
+
+#blog p{
+  @apply text-justify;
+  @apply my-2;
 }

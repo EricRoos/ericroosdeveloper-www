@@ -10,19 +10,32 @@ p {
   @apply text-justify;
 }
 
-#blog h1{
-  @apply text-3xl;
-  @apply text-primary;
-  @apply my-2;
+#blog h1 {
+  @apply font-bold;
+  @apply text-3xl text-accent;
+  @apply mb-2;
 }
 
-#blog h2{
-  @apply text-xl;
-  @apply text-accent;
-  @apply my-2;
+#blog h2 {
+  @apply font-bold;
+  @apply text-xl text-primary;
+  @apply mb-2;
 }
 
-#blog p{
+#blog h3 {
+  @apply text-gray font-bold;
+  @apply mb-2;
+}
+
+#blog p {
   @apply text-justify;
   @apply my-2;
+}
+
+#blog hr {
+  @apply text-gray my-3;
+}
+
+#blog img {
+  @apply m-auto p-2;
 }

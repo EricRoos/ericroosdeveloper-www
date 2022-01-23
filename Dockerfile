@@ -13,4 +13,5 @@ RUN yarn build
 FROM nginx:latest
 COPY --from=0 /app/build /usr/share/nginx/html
 COPY ./server/nginx.conf /etc/nginx/conf.d/default.conf
-EXPOSE 8080
+EXPOSE 80
+EXPOSE 443

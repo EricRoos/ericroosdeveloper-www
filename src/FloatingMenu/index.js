@@ -32,7 +32,11 @@ function FloatingMenu(){
       onClickOutside={() => setIsOpen(false)}
       content={<div className='animate__animated animate__faster animate__slideInUp md:hidden w-[80vw] m-auto px-4'><Aside className='rounded-xl rounded-br-none'/></div>}
     >
-      <button onClick={toggle} className={`block drop-shadow-2xl md:hidden flex fixed bottom-4 right-4 rounded p-3 bg-primary z-1 justify-center items-center text-white text-3xl ${ isOpen ? 'bg-gray rounded-t-none' : '' }`}>
+      <button
+        aria-label='menu'
+        onClick={toggle}
+        className={`block drop-shadow-2xl md:hidden flex fixed bottom-4 right-4 rounded p-3 bg-primary z-1 justify-center items-center text-white text-3xl ${ isOpen ? 'bg-gray rounded-t-none' : '' }`}
+      >
         { !isOpen && <BsMenuUp /> }
         { isOpen && <IoMdClose /> }
       </button>

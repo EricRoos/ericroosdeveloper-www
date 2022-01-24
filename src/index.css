@@ -23,7 +23,7 @@ p {
 }
 
 #blog h3 {
-  @apply text-gray font-bold;
+  @apply text-gray font-bold dark:text-white;
   @apply mb-2;
 }
 
@@ -33,7 +33,7 @@ p {
 }
 
 #blog hr {
-  @apply text-gray my-3;
+  @apply text-gray my-3 dark:text-white;
 }
 
 #blog img {

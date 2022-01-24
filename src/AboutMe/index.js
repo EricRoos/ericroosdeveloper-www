@@ -32,7 +32,7 @@ function AboutMe(){
 
   return (
     <div className='w-auto'>
-      <div className='flex flex-wrap justify-between bg-light-gray p-8'>
+      <div className='flex flex-wrap justify-between bg-light-gray dark:bg-black dark:text-light-gray p-9'>
         <div className='w-full lg:w-1/2'>
           <div className='mb-4'>
             <h1 className='text-4xl font-bold py'>
@@ -50,7 +50,7 @@ function AboutMe(){
           <img src='https://place-hold.it/400x300' alt=''/>
         </div>
       </div>
-      <div className='px-8 mt-4'>
+      <div className='px-8 pt-4 bg-white dark:bg-gray'>
         <div>
           <Heading>
             <Translate path='body.WhatIDo' />

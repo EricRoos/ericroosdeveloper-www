@@ -5,7 +5,7 @@ import Content from './content';
 
 function Project({title, description}){
   return (
-    <div className='flex flex-col md:flex-row bg-light-gray p-6 rounded drop-shadow'>
+    <div className='flex flex-col md:flex-row bg-light-gray dark:bg-black dark:text-light-gray p-6 rounded drop-shadow'>
       <div className='flex-grow'>
         <Heading>{title}</Heading>
         <p className='hidden md:block'>

@@ -12,7 +12,7 @@ import {
 
 function Aside({className}) {
   return (
-    <aside id='aside' className={`flex flex-col divide-y divide-y-black gap-6 bg-primary p-2 text-white ${className}`}>
+    <aside id='aside' className={`flex flex-col divide-y divide-y-black gap-6 bg-primary p-2 text-light-gray dark:grayscale-[50%] ${className}`}>
       <div className='py-6' >
         <div id='info' className='text-center gap-6 flex flex-col'>
           <div className='text-xl'>Eric Roos</div>
@@ -48,11 +48,6 @@ function Aside({className}) {
               <BsJournalRichtext /> Blog
             </div>
           </Link>
-        </div>
-      </div>
-      <div className='py-6'>
-        <div className='text-center'>
-          Dark Mode 
         </div>
       </div>
     </aside>

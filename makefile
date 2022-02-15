@@ -1,4 +1,4 @@
-build:
+build: 
 	docker build . -t ericroosdeveloper:latest
 tag:
 	docker tag ericroosdeveloper:latest ericroos13/ericroosdeveloper:latest

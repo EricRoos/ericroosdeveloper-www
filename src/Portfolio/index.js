@@ -7,7 +7,7 @@ function Project({title, description, link}){
   return (
     <div className='flex flex-col bg-light-gray dark:bg-black dark:text-light-gray p-6 rounded drop-shadow gap-4'>
       <Heading>{title}</Heading>
-      <p className='hidden md:block'>
+      <p className=''>
         { description }
       </p>
      { !!link && (

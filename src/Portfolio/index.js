@@ -17,6 +17,7 @@ function Project({title, description, link}){
   );
 }
 const ProjectList = [
+  'personalsite',
   'finbrain',
   'datefeed',
   'budgetr',

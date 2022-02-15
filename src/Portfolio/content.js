@@ -1,6 +1,11 @@
 const content = {
   en: {
     projects: {
+      personalsite: {
+        name: '[Personal] - ericroosdeveloper.com',
+        description: 'This site is built with create react app, check the source link below.',
+        link: 'https://github.com/EricRoos/ericroosdeveloper-www'
+      },  
       finbrain: {
         name: '[Personal] - FinBrain',
         description: 'A Rails App utilizing Hotwire Turbo coupled with Stanford NLP library to read CSV provided bank statements. The app auto assigns tags like \"home depot\", or \"walmar\" to easily identify where money was spent at a granular level and provide an interface to easily view and track expenses.',

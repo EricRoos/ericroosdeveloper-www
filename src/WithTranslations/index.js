@@ -5,8 +5,10 @@ export function getTranslationText(translationContent, path){
 };
 
 export default function withTranslations(translationContent){
-  function Translate({path}){
-    return getTranslationText(translationContent, path);
+  function Translate({path, className}){
+    return (
+      <span className={className || ''} dangerouslySetInnerHTML={{__html: getTranslationText(translationContent, path)}} />
+    )
   }
   return Translate;
 }

@@ -23,7 +23,8 @@ function Aside({className}) {
             <img src='https://gravatar.com/avatar/dca12ef12f5f526427d2d582bba05552?s=400&d=robohash&r=x' className='rounded-full' alt=''/>
           </div> 
           <div>
-            Tech / Team Lead
+            Email me at: <br/>
+            ericroos at hey.com
           </div>
         </div>
         <div id='socials'>

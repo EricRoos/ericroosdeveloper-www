@@ -35,4 +35,6 @@ jobs:
     - name: Build
       run: make build tag push
     - name: Deploy
+      env:
+        SSH_AUTH_SOCK: /tmp/ssh_agent.sock
       run: ssh -i /home/runner/.ssh/github_actions.pem ec2-user@ericroosdeveloper.com 'cd /home/ec2-user/deployables/ericroosdeveloper && ./restart.sh'

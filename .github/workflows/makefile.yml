@@ -13,12 +13,26 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Add SSH key
+      env:
+          SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+      run: |
+          mkdir -p /home/runner/.ssh
+          # Replace example.com with the hostname of the machine
+          # you're SSH-ing into
+          ssh-keyscan ericroosdeveloper.com >> /home/runner/.ssh/known_hosts
+          # DOKKU_SSH_KEY is the name of the repository secret
+          echo "${{ secrets.SSH_KEY }}" > /home/runner/.ssh/github_actions.pem
+          chmod 600 /home/runner/.ssh/github_actions.pem
+          ssh-agent -a $SSH_AUTH_SOCK > /dev/null   
+          ssh-add /home/runner/.ssh/github_actions.pem
     -
       name: Login to Docker Hub
       uses: docker/login-action@v1
       with:
          username: ${{ secrets.DOCKERHUB_USERNAME }}
          password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Build
+      run: make build tag push
     - name: Deploy
-      run: make deploy
-    
+      run: ssh -i /home/runner/.ssh/github_actions.pem ec2-user@ericroosdeveloper.com 'cd /home/ec2-user/deployables/ericroosdeveloper && ./restart.sh'

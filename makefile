@@ -11,3 +11,5 @@ stop:
 	docker rm ericroosdeveloper-www
 deploy:
 	@make build tag push
+	ssh DateFeed 'cd /home/ec2-user/deployables/ericroosdeveloper && ./restart.sh'
+

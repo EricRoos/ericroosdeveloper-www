@@ -4,37 +4,42 @@ const content = {
   en: {
     heading: {
       name: "Eric Roos",
-      title: "Tech Lead",
-      summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar vitae nisl ac vehicula. Nam id interdum lorem. Fusce posuere ligula et iaculis accumsan. Pellentesque faucibus dolor eros, quis accumsan quam pharetra ac. Proin a lacus eu eros fringilla dapibus vel eget turpis. Nunc scelerisque finibus nisi vel tempus. Donec eget felis eget nisi lacinia venenatis. Integer ipsum tortor, imperdiet sit amet mi consequat, congue rutrum neque. Donec pellentesque aliquam neque ac auctor. Suspendisse placerat risus mauris, id maximus quam vestibulum nec."
+      title: "Team/Tech Lead",
+      summary: "I want to build high quality software with great people with a mission of bettering the world we live in for ALL people. I believe in being open, honest and transparent throughout the entire project life cycle. I believe in communicating early and often. I believe that details matter. Closing in on 10 years of professional software development, and 20 years of hobby developing, I want to design software systems that are concise, efficent, and solve the business need. I embrace an agile, iterative approach to not only development, but delivery of software as well. Embracing the feedback from your customer or audience is one of the most important things required in making good software."
     },
     body: {
       WhatIDo: "What I do",
-      WhatIDoContent: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pulvinar vitae nisl ac vehicula. Nam id interdum lorem. Fusce posuere ligula et iaculis accumsan. Pellentesque faucibus dolor eros, quis accumsan quam pharetra ac. Proin a lacus eu eros fringilla dapibus vel eget turpis. Nunc scelerisque finibus nisi vel tempus. Donec eget felis eget nisi lacinia venenatis. Integer ipsum tortor, imperdiet sit amet mi consequat, congue rutrum neque. Donec pellentesque aliquam neque ac auctor. Suspendisse placerat risus mauris, id maximus quam vestibulum nec."
+      WhatIDoContent: "I do consider myself a fullstack engineer, but prefer to stay at the backend part of the stack. I have stood up servers in AWS and managed them for my personal projects, and I have designed and implemented front ends as well. I routinely look for new patterns and tools to make managing a product easy and cost effective using a variety of technologies.."
     },
     languages: {
       javascript: {
         name: "JavaScript & React",
-        description: "I am confident in building full SPAs or Component Libraries with React.",
+        description: "",
         icons: [],
       },
       ror: {
         name: "Ruby & Ruby on Rails",
-        description: "Lorem Ipsum",
+        description: "",
         icons: [ RailsIcon ].join(",")
       },
       web: {
         name: "HTML & CSS",
-        description: "Lorem Ipsum",
+        description: "",
         icons: [],
       },
       git: {
         name: "Git",
-        description: "Lorem Ipsum",
+        description: "",
         icons: [],
       },
       java: {
         name: "Java",
-        description: "Lorem Ipsum",
+        description: "",
+        icons: [],
+      },
+      docker: {
+        name: "Docker",
+        description: "",
         icons: [],
       }
     }

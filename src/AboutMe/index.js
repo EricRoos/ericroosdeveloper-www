@@ -10,13 +10,15 @@ import HtmlIcon from './icons/html.svg?url';
 import CssIcon from './icons/css.svg?url';
 import GitIcon from './icons/git.svg?url';
 import JavaIcon from './icons/java.svg?url';
+import DockerIcon from './icons/docker.svg?url';
 
 const SHOWN_LANGUAGES = [
   'javascript', 
   'ror',
   'web',
   'git',
-  'java'
+  'java',
+  'docker',
 ]
 
 const icons = {
@@ -24,7 +26,8 @@ const icons = {
   javascript: [ JavaScriptIcon, ReactIcon ],
   web: [ HtmlIcon, CssIcon ],
   git: [ GitIcon ],
-  java: [ JavaIcon ]
+  java: [ JavaIcon ],
+  docker: [ DockerIcon ]
 }
 
 function AboutMe(){
@@ -46,8 +49,8 @@ function AboutMe(){
             <Translate path='heading.summary' />
           </p>
         </div>
-        <div className='w-full lg:w-1/2 overflow-hidden justify-center lg:justify-end flex'>
-          <img src='https://place-hold.it/400x300' alt=''/>
+        <div className='w-full lg:w-1/3 overflow-hidden justify-center lg:justify-end flex'>
+          <img src='https://scontent-dfw5-1.xx.fbcdn.net/v/t1.6435-9/36276032_10156563743169828_4137601936247488512_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=zD2fpmg2qtoAX97l11q&_nc_ht=scontent-dfw5-1.xx&oh=00_AT-84t2jDRIBS73NrJoipGN6VQBx0vXsstmTk21tehMsWg&oe=6231A1C1' alt=''/>
         </div>
       </div>
       <div className='px-8 pt-4 bg-white dark:bg-gray'>

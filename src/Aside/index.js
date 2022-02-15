@@ -4,6 +4,8 @@ import {
   IoDocumentTextSharp,
 } from 'react-icons/io5'
 
+import Resume from '../static-files/Resume.pdf?url'
+
 import { Link } from 'react-router-dom';
 
 import {
@@ -17,10 +19,10 @@ function Aside({className}) {
         <div id='info' className='text-center gap-6 flex flex-col'>
           <div className='text-xl'>Eric Roos</div>
           <div className='max-h-32 rounded-full flex justify-center items-center overflow-hidden m-auto aspect-square'>
-            <img src='https://place-hold.it/300x300' className='rounded-full' alt=''/>
+            <img src='https://gravatar.com/avatar/dca12ef12f5f526427d2d582bba05552?s=400&d=robohash&r=x' className='rounded-full' alt=''/>
           </div> 
           <div>
-            Lorem Ipsum dolor set.
+            Tech / Team Lead
           </div>
         </div>
         <div id='socials'>
@@ -38,16 +40,18 @@ function Aside({className}) {
               <IoCodeSlash /> Portfolio
             </div>
           </Link>
-          <Link to='/resume'>
+          <a href={Resume}>
             <div className='flex items-center gap-2 hover:text-black'>
               <IoDocumentTextSharp /> Resume
             </div>
-          </Link>
-          <Link to='/blog'>
-            <div className='flex items-center gap-2 hover:text-black'>
-              <BsJournalRichtext /> Blog
-            </div>
-          </Link>
+          </a>
+          { false && (
+            <Link to='/blog'>
+              <div className='flex items-center gap-2 hover:text-black'>
+                <BsJournalRichtext /> Blog
+              </div>
+            </Link>
+          ) }
         </div>
       </div>
     </aside>

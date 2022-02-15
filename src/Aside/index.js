@@ -2,6 +2,7 @@ import {
   IoPersonCircle,
   IoCodeSlash,
   IoDocumentTextSharp,
+  IoLogoGithub,
 } from 'react-icons/io5'
 
 import Resume from '../static-files/Resume.pdf?url'
@@ -43,6 +44,11 @@ function Aside({className}) {
           <a href={Resume}>
             <div className='flex items-center gap-2 hover:text-black'>
               <IoDocumentTextSharp /> Resume
+            </div>
+          </a>
+          <a href='https://github.com/EricRoos'>
+            <div className='flex items-center gap-2 hover:text-black'>
+              <IoLogoGithub /> Github
             </div>
           </a>
           { false && (
